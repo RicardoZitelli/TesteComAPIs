@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "SoftPlan": {
+    "TesteComAPIs": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
