@@ -20,7 +20,6 @@ app.UseHttpsRedirection();
 
 app.MapGet("/taxaJuros", (decimal valor) =>
 {
-
     ICreate fabrica = new Create();
 
     Financa financa = fabrica.CriarObjeto();
@@ -32,7 +31,6 @@ app.MapGet("/taxaJuros", (decimal valor) =>
 
 app.MapGet("/calculajuros", (decimal valor, int meses) =>
 {
-
     ICreate fabrica = new Create();
 
     Financa financa = fabrica.CriarObjeto();
@@ -44,5 +42,11 @@ app.MapGet("/calculajuros", (decimal valor, int meses) =>
     return decimal.Parse(string.Format("{0:0.##}",  valorFinal ));
 })
 .WithName("calculajuros");
+
+app.MapGet("/showmethecode", () =>
+{      
+    return "Link do GitHub: https://github.com/RicardoZitelli/TesteComAPIs";
+})
+.WithName("showmethecode");
 
 app.Run();
