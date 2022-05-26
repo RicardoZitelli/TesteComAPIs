@@ -24,7 +24,7 @@
         {
             try
             {
-                return valorInicial * Math.Pow(1M + juros, meses);
+                return valorInicial * (decimal)Math.Pow(1 + (double)juros, meses);
             }
             catch (Exception)
             {

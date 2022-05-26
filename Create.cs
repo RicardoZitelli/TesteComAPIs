@@ -1,6 +1,6 @@
 ﻿namespace SoftPlan
 {
-    public class ConcreteCreate : ICreate
+    public class Create : ICreate
     {
         public Financa CriarObjeto()
         {

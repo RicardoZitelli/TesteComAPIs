@@ -18,10 +18,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/taxaJuros", (double valor) =>
+app.MapGet("/taxaJuros", (decimal valor) =>
 {
 
-    ICreate fabrica = new ConcreteCreate();
+    ICreate fabrica = new Create();
 
     Financa financa = fabrica.CriarObjeto();
 
@@ -33,7 +33,7 @@ app.MapGet("/taxaJuros", (double valor) =>
 app.MapGet("/calculajuros", (decimal valor, int meses) =>
 {
 
-    ICreate fabrica = new ConcreteCreate();
+    ICreate fabrica = new Create();
 
     Financa financa = fabrica.CriarObjeto();
 
