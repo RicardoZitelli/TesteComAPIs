@@ -23,7 +23,7 @@ app.MapGet("/taxaJuros", (decimal valor) =>
 {
     IFabrica fabrica = new Fabrica();
 
-    Financa financa = fabrica.CriarObjeto();
+    Financa financa = fabrica.CriarObjetoFinanca();
 
     return financa.RetornarTaxaDeJuros(valor);
     
@@ -34,7 +34,7 @@ app.MapGet("/calculajuros", (decimal valor, int meses) =>
 {
     IFabrica fabrica = new Fabrica();
 
-    Financa financa = fabrica.CriarObjeto();
+    Financa financa = fabrica.CriarObjetoFinanca();
 
     decimal juros = financa.RetornarTaxaDeJuros(valor);
 

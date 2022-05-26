@@ -4,7 +4,7 @@ namespace SoftPlan
 {
     public class Fabrica : IFabrica
     {
-        public Financa CriarObjeto()
+        public Financa CriarObjetoFinanca()
         {
             return new Financa();
         }

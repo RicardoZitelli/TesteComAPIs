@@ -4,7 +4,7 @@ namespace TesteComAPIs.Interfaces
 {
     public interface IFabrica
     {
-        public Financa CriarObjeto();
+        public Financa CriarObjetoFinanca();
 
     }
 }
