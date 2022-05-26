@@ -17,25 +17,21 @@
             {
                 return 0;
             }
-
         }
 
         public decimal CalcularJuros(decimal valorInicial, decimal juros, int meses)
         {
             try
             {
-                return valorInicial * (decimal)Math.Pow(1 + (double)juros, meses);
+                
+                return valorInicial * (decimal)Math.Pow(0.01 + (double)juros, meses);
             }
             catch (Exception)
             {
 
                 return 0;
-            }
-            
+            }            
         }
-
-
-
 
     }
 }

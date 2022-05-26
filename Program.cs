@@ -37,7 +37,7 @@ app.MapGet("/calculajuros", (decimal valor, int meses) =>
 
     Financa financa = fabrica.CriarObjeto();
 
-    double juros = financa.RetornarTaxaDeJuros(double.Parse(valor.ToString()));
+    decimal juros = financa.RetornarTaxaDeJuros(valor);
 
     decimal valorFinal = financa.CalcularJuros(valor, juros, meses);
 
