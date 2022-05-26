@@ -1,6 +1,8 @@
-﻿namespace SoftPlan
+﻿using TesteComAPIs.Interfaces;
+
+namespace SoftPlan
 {
-    public class Create : ICreate
+    public class Fabrica : IFabrica
     {
         public Financa CriarObjeto()
         {

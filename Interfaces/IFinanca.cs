@@ -1,4 +1,4 @@
-﻿namespace SoftPlan
+﻿namespace TesteComAPIs.Interfaces
 {
     public interface IFinanca
     {

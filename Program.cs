@@ -1,4 +1,5 @@
 using SoftPlan;
+using TesteComAPIs.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +21,7 @@ app.UseHttpsRedirection();
 
 app.MapGet("/taxaJuros", (decimal valor) =>
 {
-    ICreate fabrica = new Create();
+    IFabrica fabrica = new Fabrica();
 
     Financa financa = fabrica.CriarObjeto();
 
@@ -31,7 +32,7 @@ app.MapGet("/taxaJuros", (decimal valor) =>
 
 app.MapGet("/calculajuros", (decimal valor, int meses) =>
 {
-    ICreate fabrica = new Create();
+    IFabrica fabrica = new Fabrica();
 
     Financa financa = fabrica.CriarObjeto();
 
